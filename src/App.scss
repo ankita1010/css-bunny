@@ -1,0 +1,110 @@
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  .bunny-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    animation: hop 1s linear 0s infinite;
+    .bunny-head {
+      width: 100px;
+      height: 72px;
+      border-radius: 58% 36% 3% 19px;
+      position: relative;
+      background-color: mistyrose;
+      .ears {
+        background-color: rgb(49, 32, 32);
+        height: 100px;
+        width: 30px;
+        top: -81px;
+        border-radius: 47%;
+        position: absolute;
+        &.ear-1 {
+          left: 10px;
+          z-index: -1;
+          transform: rotate(-12deg);
+          transform-origin: right;
+        }
+        &.ear-2 {
+          left: 60px;
+          transform: rotate(20deg);
+          transform-origin: left;
+        }
+      }
+      .eye {
+        background-color: black;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        top: 20px;
+        left: 20px;
+        position: absolute;
+        &::after {
+          content: "";
+          position: absolute;
+          background-color: white;
+          width: 4px;
+          height: 4px;
+          border-radius: 50%;
+          top: 5px;
+          left: 6px;
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          background-color: white;
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          top: 10px;
+          left: 8px;
+        }
+      }
+    }
+    .body {
+      width: 140px;
+      height: 200px;
+      position: relative;
+      left: 20px;
+      transform: rotate(-15deg);
+      top: -14px;
+      background-color: mistyrose;
+      border-radius: 37% 41% 48% 19px;  
+    }
+    .back-leg {
+      background-color: mistyrose;
+    width: 53px;
+    height: 20px;
+    position: absolute;
+    bottom: 4px;
+    border-radius: 50%;
+    left: 19px;
+    }
+    .front-leg { 
+    width: 11px;
+    height: 29px;
+    background-color: mistyrose;
+    position: absolute;
+    left: 5px;
+    border-radius: 050%;
+    transform: rotate(26deg);
+
+    }
+  }
+}
+@keyframes hop {
+  0% {
+    transform: translateY(0px);
+  }
+  40% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
