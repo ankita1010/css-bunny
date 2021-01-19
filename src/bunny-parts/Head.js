@@ -5,6 +5,8 @@ const Head = () => {
             <div className="ears ear-1"></div>
             <div className="ears ear-2"></div>
             <div className="eye"></div>
+            <div className="nose"></div>
+            <div className="smile"></div>
     </div> );
 }
  

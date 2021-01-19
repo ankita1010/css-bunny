@@ -10,11 +10,12 @@
     justify-content: center;
     flex-direction: column;
     position: absolute;
-    animation: hop 1s linear 0s infinite;
+    animation: hop 0.5s linear 0s infinite;
+    will-change: transform;
     .bunny-head {
       width: 100px;
       height: 72px;
-      border-radius: 58% 36% 3% 19px;
+      border-radius: 66% 38% 31% 19px;
       position: relative;
       background-color: mistyrose;
       .ears {
@@ -22,7 +23,7 @@
         height: 100px;
         width: 30px;
         top: -81px;
-        border-radius: 47%;
+        border-radius: 47% 47% 14% 14%;
         position: absolute;
         &.ear-1 {
           left: 10px;
@@ -65,6 +66,25 @@
           left: 8px;
         }
       }
+      .nose {
+        width: 4px;
+        height: 8px;
+        background-color: black;
+        position: absolute;
+        border-radius: 50%;
+        left: -1px;
+        top: 44px;
+      }
+      .smile {
+        width: 4px;
+        width: 19px;
+        height: 8px;
+        position: absolute;
+        border-radius: 50%;
+        left: -1px;
+        top: 50px;
+        border-bottom: 1px solid black;
+      }
     }
     .body {
       width: 140px;
@@ -102,7 +122,7 @@
     transform: translateY(0px);
   }
   40% {
-    transform: translateY(-100px);
+    transform: translateY(-50px);
   }
   100% {
     transform: translateY(0px);

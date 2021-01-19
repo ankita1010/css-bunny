@@ -1,8 +1,8 @@
 import './App.scss';
-import BackLeg from './puppy-parts/BackLeg';
-import Body from './puppy-parts/Body';
-import FrontLeg from './puppy-parts/FrontLeg';
-import Head from './puppy-parts/Head';
+import BackLeg from './bunny-parts/BackLeg';
+import Body from './bunny-parts/Body';
+import FrontLeg from './bunny-parts/FrontLeg';
+import Head from './bunny-parts/Head';
 
 function App() {
   return (
