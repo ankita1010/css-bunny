@@ -11,7 +11,7 @@
     justify-content: center;
     flex-direction: column;
     position: absolute;
-    animation: hop 0.5s linear 0s infinite;
+    animation: hop 0.7s ease-in 0s infinite;
     will-change: transform;
     .bunny-head {
       width: 100px;
